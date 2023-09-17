@@ -1,3 +1,4 @@
+/* eslint-disable no-const-assign */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import Courc from './Courc';
@@ -12,10 +13,10 @@ const Courses = () => {
       .then((data) => setCourses(data));
   }, []);
 
-  const oldData=clickTitle.title
+ 
   const handleClicked = (course) => {
-    
-    setClickTitle([course]);
+const neww=([...clickTitle,course.title])
+   setClickTitle(neww);
   };
 
   return (
