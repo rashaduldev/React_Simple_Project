@@ -15,8 +15,16 @@ const Courses = () => {
 
  
   const handleClicked = (course) => {
-const neww=([...clickTitle,course.title])
-   setClickTitle(neww);
+    console.log(course);
+    const isSelected=clickTitle.find((select)=> select.Id==course.Id);
+    if (isSelected) {
+      alert('ummmmm')
+    } else {
+      const neww=([...clickTitle,course])
+      setClickTitle(neww);
+    }
+console.log(clickTitle);
+
   };
 
   return (

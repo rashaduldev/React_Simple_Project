@@ -22,7 +22,7 @@ const Courc = ({clickTitle}) => {
         clickTitle.map((course,index)=>(
           
             <ul key={index}>
-            <li>{`${index + 1}. ${course}`}</li>
+            <li>{`${index + 1}. ${course.title}`}</li>
           </ul>
         
         ))
